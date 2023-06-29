@@ -15,6 +15,9 @@ jobs:
   pipeline:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      MACHINE_USER_NAME: ${{ secrets.MACHINE_USER_NAME}}
+      MACHINE_USER_TOKEN: ${{ secrets.MACHINE_USER_TOKEN}}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
