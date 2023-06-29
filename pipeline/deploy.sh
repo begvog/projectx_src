@@ -18,6 +18,6 @@ rm -rf *
 cp -r ../code/* .
 
 git add --all
-git commit -m "$(date) || true"
+git commit -m "$(date)" || true
 git push --all
 rm -rf projectx_webserver/
